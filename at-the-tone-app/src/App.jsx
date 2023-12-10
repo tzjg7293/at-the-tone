@@ -3,20 +3,11 @@ import AudioRecorder from "../src/AudioRecorder";
 import './App.css'
 
 const App = () => {
-  let [recordOption, setRecordOption] = useState("audio");
-  const toggleRecordOption = (type) => {
-      return () => {
-          setRecordOption(type);
-      };
-  };
+
   return (
       <div>
-          <h1>React Media Recorder</h1>
-          <div className="button-flex">
-              <button onClick={toggleRecordOption("audio")}>
-                Record Audio
-              </button>
-          </div>
+          <h1>At the Tone</h1>
+          <p>Anonymous voice memos... A safe and free space to vent and share stories, thoughts and life experiences.</p>
           <div>
               {<AudioRecorder/>}
           </div>
